@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        input[type="text"]{
+            background-color: aqua;
+        }
+        button{
+            width: 200px;
+            height: 50px;
+            font-size: 24px;
+            background-color: green;
+        }
+        button:hover{
+            background-color: orangered;
+        }
+        a::before{
+            content: "\21d2 click here: ";
+            font-weight: bold;
+        }
+        p::selection {
+            color: red;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" name="name" placeholder="name">
+        <input type="password" name="password" placeholder="password">
+    </div>
+    <div>
+        favurite color?
+        <input type="radio" name="color" value="red">RED
+        <input type="radio" name="color" value="green">green
+        <input type="radio" name="color" value="blue">blue
+        <input type="radio" name="color" value="other">other
+    </div>
+    <div>
+        <input  name="country" placeholder="Country" list="countries">
+        <datalist id="countries">
+            <option value="afghan"></option>
+            <option value="alg"></option>
+            <option value="angola"></option>
+            <option value="usa"></option>
+            
+        </datalist>
+    </div>
+    <div>
+        <button >click me!</button>
+    </div>
+    <ul>
+        <li><a href="#">one link</a></li>
+        <li><a href="#">second link</a></li>
+        <li><a href="#">third link</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus maiores ipsam similique modi, aliquid fuga ducimus praesentium rerum natus quaerat. Ducimus doloribus voluptates excepturi autem error rerum eveniet soluta magni.</p>
+</body>
+</html>

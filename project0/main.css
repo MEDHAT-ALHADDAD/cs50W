@@ -1,0 +1,21 @@
+.p1 {
+  color: saddlebrown;
+}
+
+.p1 .pargraph {
+  background-color: blue;
+}
+.p1 .inner_p1 .inner_p1_class {
+  background-color: yellow;
+}
+.p1 .inner_p1 #inner_p1_pargraph {
+  background-color: red;
+}
+.p1 .p8 {
+  background-color: green;
+}
+.p1 .p9 {
+  background-color: white;
+}
+
+/*# sourceMappingURL=main.css.map */
