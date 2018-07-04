@@ -1,0 +1,27 @@
+$rcolor : red;
+$ycolor : yellow;
+$gcolor : green;
+
+%main{
+    color: saddlebrown;
+}
+.p1{
+    @extend %main;
+    .pargraph{
+        background-color: blue;
+    }
+    .inner_p1{
+        .inner_p1_class{
+            background-color: $ycolor;
+        }
+        #inner_p1_pargraph{
+            background-color:$rcolor;
+        }
+    }
+    .p8{
+        background-color: $gcolor;
+    }
+    .p9{
+        background-color: white;
+    }
+}

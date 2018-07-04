@@ -1,0 +1,46 @@
+body{
+    height: 100%;
+    background-image: url(gettyimages-758591537.jpg);
+    /* z-index: -9999; */
+    /* color: green; */
+}
+footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;   /* Height of the footer */
+ }
+ inner_p1_class,pargraph{
+     background-color: white;
+     color: green;
+ }
+ .inner_p1_class,#inner_p1_pargraph{
+     background-color: white;
+ }
+ .p1 {
+     color: yellow;
+ }
+
+ .p1 > p{
+     color: red;
+ }
+
+
+.p1 > p::selection{
+     background-color: red;
+     color: yellow;
+ }
+ .inner_p1_class + #inner_p1_pargraph{
+     color: black;
+ }  
+
+ input[type=text]{
+     color: blueviolet;
+ }
+
+
+ @media(max-width : 767px){
+     body{
+         background-image: none;
+     }
+ }
