@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+    <h1 class="display-4" style="text-align: center">Login</h1>
+{% endblock heading %}
+
+{% block body %}
+    <form action="{{url_for('login')}}" method="POST">
+        <div class="form-group">
+            <label for="exampleInputusername1">User Name</label>
+            <input type="text" class="form-control" name="username" id="exampleusernamePassword1" placeholder="User Name">
+        </div>
+        <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control"  name="password" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Save Password</label>
+        </div>
+        <button type="submit" class="btn btn-primary">login</button>
+    </form>
+{% endblock body %}

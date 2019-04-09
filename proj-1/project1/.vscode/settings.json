@@ -1,0 +1,3 @@
+{
+    "pgsql.connection": "postgres://kzspkcgxwfgggz:212c3e5a75ca861906aa77eaa081aa9f9a753365ff1db2a6d284631e6e012668@ec2-54-227-240-7.compute-1.amazonaws.com:5432/detdsknm9rtht6"
+}

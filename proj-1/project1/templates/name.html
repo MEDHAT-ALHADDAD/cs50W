@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+    <!-- {{username}}
+    <hr> -->
+    <ol>
+        <li>id: {{name.books[0].id}}</li>
+        <li>isbn: {{name.books[0].isbn}}</li>
+        <li>isbn13: {{name.books[0].isbn13}}</li>
+        <li>ratings_count: {{name.books[0].ratings_count}}</li>
+        <li>reviews_count: {{name.books[0].reviews_count}}</li>
+        <li>text_reviews_count: {{name.books[0].text_reviews_count}}</li>
+        <li>work_ratings_count: {{name.books[0].work_ratings_count}}</li>
+        <li>work_reviews_count: {{name.books[0].work_reviews_count}}</li>
+        <li>work_text_reviews_count: {{name.books[0].work_text_reviews_count}}</li>
+        <li>average_rating: {{name.books[0].average_rating}}</li>
+    </ol>
+{% endblock heading %}
+
+{% block body %}
+    <hr>
+    <form action="{{url_for('review',book_id=name.books[0].isbn ,user_id=username.id, username= username.username)}}" method="POST">
+        <div class="form-group">
+            <label for="exampleInputusername1">User Name</label>
+            <input type="text" class="form-control" disabled name="username" id="exampleusernamePassword1" placeholder="{{username.username}}">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">review</label>
+          <input type="number" name="rating" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter review">
+          <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">comment</label>
+          <input type="text" name="comment" class="form-control" id="exampleInputPassword1" placeholder="comment" >
+        </div>
+        <!-- <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Save Password</label>
+        </div> -->
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+{% endblock body %}

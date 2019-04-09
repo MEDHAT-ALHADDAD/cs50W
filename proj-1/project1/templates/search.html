@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+
+{% block heading %}
+
+{% endblock heading %}
+
+{% block body %}
+<table class="table">
+        <thead class="thead-dark ">
+          <tr>
+            <th scope="col">ISBN</th>
+            <th scope="col">TITLE</th>
+            <th scope="col">AUTHOR</th>
+            <th scope="col">YEAR</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for book in books %}
+                {% for isbn, title, author, year in book %}
+                    <tr>
+                    <th style="border: solid; border-width: 1px;" scope="row"> {{ isbn }} </th>
+                    <td style="border: solid; border-width: 1px;"> <a href="/{{isbn}}">{{ title }} </a></td>
+                    <td style="border: solid; border-width: 1px;"> {{ author }} </td>
+                    <td style="border: solid; border-width: 1px;"> {{ year }} </td>
+                    </tr>
+                {% endfor %}
+            {% endfor %}
+        </tbody>
+      </table>
+{% endblock body %}
